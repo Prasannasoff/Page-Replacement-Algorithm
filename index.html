@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Replacement Algorithm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Page Replacement Algorithm</h1>
+        <form id="page-form">
+            <label for="pages">Page References (comma separated):</label>
+            <input type="text" id="pages" required>
+            <label for="frames">Number of Frames:</label>
+            <input type="number" id="frames" min="1" required>
+            <label for="method">Select Method:</label>
+            <select id="method">
+                <option value="LRU">LRU</option>
+                <option value="FIFO">FIFO</option>
+                <option value="OPT">OPT</option>
+            </select>
+            <button type="submit">Simulate</button>
+        </form>
+        <div class="output-container">
+            <div id="output-lru" class="output"></div>
+            <div id="output-fifo" class="output"></div>
+            <div id="output-opt" class="output"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
